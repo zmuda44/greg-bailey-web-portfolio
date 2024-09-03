@@ -1,9 +1,27 @@
 const projects = [
+
   {
     id: 1,
-    title: "Task Board",
-    description: "Allows user to keep track of tasks and mark them as complete",
+    title: "Nomad Notes",
+    description: "Keep track of upcoming trips, past trips, notes, and more all in a social media format. Share trips with friends or keep them private. ",
+    img: './images/nomad-notes-screenshot.png',
+    url: 'url coming shortly',
+    repo: 'repo coming shortly'
+  },
+  {
+    id: 2,
+    title: "Traders' Jons organic marketplace",
+    description: "Trader Jons - the ebay of organic foods",
     img: './images/task board screenshot.png',
+    url: 'https://zmuda44.github.io/Module-5-Challenge/',
+    repo: 'https://github.com/zmuda44/Module-5-Challenge'
+  },
+
+  {
+    id: 3,
+    title: "Rutgers Campus Cuisine - RU Hungry",
+    description: "Fictional restaurant operating in downtown New Brunswick, NJ. Customers can view directional map to the restaurant, make reservations, see food menu and more.",
+    img: './images/campus-cuisine.png',
     url: 'https://zmuda44.github.io/Module-5-Challenge/',
     repo: 'https://github.com/zmuda44/Module-5-Challenge'
   },
