@@ -6,7 +6,8 @@ function AboutMe() {
         <h1 id="aboutme-title" className="section-title">About Me</h1>
           <div className='top'>
             <div className = 'top-container'>
-              <div className="left">                     
+              <div className="left">  
+              <img src="./images/monitor and cell.png"  />              
               </div>
               <div className="right">
                 <h2>Full Stack</h2>

@@ -6,9 +6,8 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AboutMe from './pages/about-me.jsx';
 import Portfolio from './pages/portfolio.jsx';
-import Contact from './pages/contact.jsx';
 import Resume from './pages/resume.jsx';
-import Slider from './pages/image-slider.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -29,16 +28,8 @@ const router = createBrowserRouter([
         element: <Portfolio />,
       },
       {
-        path: 'contact',
-        element: <Contact />,
-      },
-      {
         path: 'resume',
         element: <Resume />,
-      },
-      {
-        path: 'slider',
-        element: <Slider />,
       },
     ],
   },

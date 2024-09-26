@@ -60,15 +60,6 @@ function Navigation() {
           Portfolio
         </Link>,
         <Link
-          key={3}
-          onClick={highlightLink}
-          id="navLink3"
-          to="/contact"
-          className={activeLink?.id === 'navLink3' ? 'nav-active' : ''}
-        >
-          Contact Me
-        </Link>,
-        <Link
           key={4}
           onClick={highlightLink}
           id="navLink4"

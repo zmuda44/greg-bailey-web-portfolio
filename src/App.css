@@ -152,7 +152,6 @@ main {
 }
 
 #about-me .top {
-  background-color: red;
   width: 100%;
   position: relative;
   display: flex;
@@ -185,26 +184,30 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
  }
 
 #about-me .top-container .left {
   width: 50%;
-  background-color: red;
-  border: solid white;
-  height: 300px;
+  height: 300px;  
+}
+
+#about-me .top-container img {
+  width: 100%;
 }
 
 
 
 #about-me .top-container .right {
+  text-align: center;
+  padding: 1rem;
+}
+#about-me .top-container .right {
   font-size: 2rem;
   text-align: center;
   color: yellow;
+  text-shadow: 3px 3px 1px green;
   padding: 1rem;
-  border-radius: 20px;
-  box-shadow: 3px 3px 25px 1px rgb(216, 106, 190);
-
-
 }
 
 #about-me .top .right button {
@@ -214,7 +217,7 @@ width: 100%;
 min-height: 75px;
 }
 
-#about-me img {
+#about-me .bio img {
   float: right;
   width: 10%;
   border-radius: 50%;
@@ -252,6 +255,10 @@ min-height: 75px;
   overflow: hidden;
 }
 
+#portfolio a {
+  color: white;
+}
+
 /* .section-body::before {
   content: "";
   position: absolute;
@@ -273,10 +280,13 @@ min-height: 75px;
 
 #portfolio .arrow {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  font-size: 2rem;
+  width: 50px;
+  height: 75px;
   top: 50%;
-  background-color: red;;
+  transform: translateY(-100%);
+  color: white;
+  text-align: center;
   cursor: pointer;
   z-index: 100;
 }
@@ -286,7 +296,6 @@ min-height: 75px;
 
 
 #portfolio .project {
-  background-color: grey;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -297,8 +306,15 @@ min-height: 75px;
 }
 
 #portfolio .project img {
-  width: 200px;
+  width: 50%;
 }
+
+#portfolio .project a {
+  margin: 10px;
+}
+
+
+
 
 
 

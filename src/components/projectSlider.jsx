@@ -1,5 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
 import projects from '../db/projects'
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
+
+
+
+
 
 
 
@@ -7,7 +16,7 @@ function Project({ title, description, img, url, repo, style }) {
   return (
     <div className="project" style={style}>
     <img src={img} alt={title} />
-    <h3>{title}</h3>
+    <h2>{title}</h2>
     <p>{description}</p>
     <div className="links">
       <a href={url} target="_blank" rel="noopener noreferrer">View Project</a>
@@ -38,7 +47,9 @@ function ProjectSlider() {
 
   return (
     <div className="project-slider">
-      <div className="arrow" id="arrow-left" onClick={showPrevProject}>L</div>
+      <div className="arrow" id="arrow-left" onClick={showPrevProject}>
+      <FontAwesomeIcon icon={faArrowLeft} />
+      </div>
       {projects.map(project => (
         <Project
           key={project.id}
@@ -51,7 +62,9 @@ function ProjectSlider() {
 
         />
       ))}
-      <div className="arrow" id="arrow-right" style={{ right: "0" }} onClick={showNextProject}>R</div>
+      <div className="arrow" id="arrow-right" style={{ right: "0" }} onClick={showNextProject}>
+      <FontAwesomeIcon icon={faArrowRight} />
+      </div>
   </div>
 
 
