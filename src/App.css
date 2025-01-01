@@ -135,6 +135,13 @@ main {
 .section-title {
   text-align: center;
   font-size: 3rem;
+  animation: animate 10s linear infinite;
+  color: yellow;
+}
+
+@keyframes animate {
+  0% {filter: hue-rotate(0deg)}
+  100% {filter: hue-rotate(3060deg)}  
 }
 
 /* About Me Section */
