@@ -200,6 +200,18 @@ main {
 
 #about-me .top-container h2,p {
   text-align: center;
+  animation-name: greg;
+  animation-duration: 4s;
+}
+
+@keyframes greg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
 }
 
 #about-me .bio p {
@@ -229,7 +241,6 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
 
 .section-body {
   width: 100%;
