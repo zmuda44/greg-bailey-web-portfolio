@@ -21,6 +21,36 @@ header a {
   color: rgb(126, 126, 126);
 }
 
+header .brand {
+  position: relative;
+  overflow: hidden;
+}
+
+header img {
+
+
+}
+
+header .brand::after {
+  content: '';
+  width: 10px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: toRight 1s ease-in-out forwards;
+}
+
+@keyframes toRight {
+  0% {opacity: 0; transform: translateX(0)}
+  30% {opacity: 1}
+  70% {opacity: 1}
+  100% {opacity: 0; transform: translateX(300px)}
+}
+
+
+
 header ul {
   color: var(--accent2);
   margin: 0;
@@ -33,6 +63,30 @@ header ul {
 
 .nav-active {
   color: white;
+}
+
+.nav-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item::after { 
+  content: '';
+  height: 100px;
+  width: 10px;
+  background-color: white;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+#navLink1::after {
+  animation: toRight1 1s forwards;
+}
+
+@keyframes toRight1 {
+  0%{background-color: white}
+  100%{background-color: red}
 }
 
 .hamburger-menu {
@@ -135,13 +189,12 @@ main {
 .section-title {
   text-align: center;
   font-size: 3rem;
-  animation: animate 10s linear infinite;
-  color: yellow;
+  animation: animate 3s linear infinite;
 }
 
 @keyframes animate {
-  0% {filter: hue-rotate(0deg)}
-  100% {filter: hue-rotate(3060deg)}  
+  0% {color: blue}
+  100% {color: yellow}  
 }
 
 /* About Me Section */
@@ -171,9 +224,9 @@ main {
 
 #about-me .portfolio-link-btn::after {
   content: '';
-  background-color: yellow;
+  background-color: white;
   height: 100px;
-  width: 100px;
+  width: 10px;
   position: absolute;
   top: 0;
   left: 0;
@@ -182,10 +235,12 @@ main {
 
 @keyframes overlay-transition {
   0% {
-    opacity: 1
+    opacity: 1;
+    transform: translateX(0)
   }
   100% {
-    opacity: .1
+    opacity: .5;
+    transform: translateX(100px)
   }
 }
 

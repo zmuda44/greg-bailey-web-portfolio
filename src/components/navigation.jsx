@@ -43,10 +43,10 @@ function Navigation() {
       links={[
         <Link
           key={1}
-          onClick={highlightLink}
+          onClick={highlightLink}   
           id="navLink1"
           to="/about-me"
-          className={activeLink?.id === 'navLink1' ? 'nav-active' : ''}
+          className={`nav-item ${activeLink?.id === 'navLink1' ? 'nav-active' : ''}`}
         >
           About Me
         </Link>,
@@ -55,16 +55,16 @@ function Navigation() {
           onClick={highlightLink}
           id="navLink2"
           to="/portfolio"
-          className={activeLink?.id === 'navLink2' ? 'nav-active' : ''}
+          className={`nav-item ${activeLink?.id === 'navLink1' ? 'nav-active' : ''}`}
         >
           Portfolio
         </Link>,
         <Link
           key={4}
           onClick={highlightLink}
-          id="navLink4"
+          id="navLink3"
           to="/resume"
-          className={activeLink?.id === 'navLink4' ? 'nav-active' : ''}
+          className={`nav-item ${activeLink?.id === 'navLink1' ? 'nav-active' : ''}`}
         >
           Resume
         </Link>,

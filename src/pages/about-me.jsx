@@ -3,7 +3,7 @@ function AboutMe() {
   return (
     <section id='about-me'>
       <div className="container">
-        <h1 id="aboutme-title" className="section-title">About Me</h1>
+        <h1 id="aboutme-title" className="section-title">Welcome to my web design portolio</h1>
         <button class="portfolio-link-btn">View Portfolio</button>
 
           <div className='top'>
