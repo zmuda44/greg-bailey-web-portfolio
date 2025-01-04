@@ -157,6 +157,16 @@ main {
   align-items: center;
 }
 
+#about-me .portfolio-link-btn {
+  background-color: red;
+  margin-bottom: 10px;
+}
+
+#about-me .portfolio-link-btn:hover {
+  /* transform: translateY(19px); */
+  transform: scale(1%);
+}
+
 #about-me .top {
   width: 100%;
   position: relative;

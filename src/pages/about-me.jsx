@@ -4,6 +4,8 @@ function AboutMe() {
     <section id='about-me'>
       <div className="container">
         <h1 id="aboutme-title" className="section-title">About Me</h1>
+        <button class="portfolio-link-btn">View Portfolio</button>
+
           <div className='top'>
             <div className = 'top-container'>
               <div className="top-1">  
