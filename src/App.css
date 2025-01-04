@@ -160,12 +160,42 @@ main {
 #about-me .portfolio-link-btn {
   background-color: red;
   margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 #about-me .portfolio-link-btn:hover {
-  /* transform: translateY(19px); */
-  transform: scale(1%);
+  transform: scale(110%);
+  transition: 2s;
 }
+
+#about-me .portfolio-link-btn::after {
+  content: '';
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: overlay-transition 2s ease-in-out forwards;
+}
+
+@keyframes overlay-transition {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: .1
+  }
+}
+
+
+
+#about-me .portfolio-link-btn:hover::after {
+  transform: translateX(100px);
+  transition-duration: 2s;
+}
+
 
 #about-me .top {
   width: 100%;
