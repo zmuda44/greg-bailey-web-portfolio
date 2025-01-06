@@ -6,177 +6,6 @@
   padding: 0 200px;
 }
 
-
-
-/* Header */
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header a {
-  text-decoration: none;
-  font-size: 1.25rem;
-  color: rgb(126, 126, 126);
-}
-
-header .brand {
-  position: relative;
-  overflow: hidden;
-}
-
-header img {
-
-
-}
-
-header .brand::after {
-  content: '';
-  width: 10px;
-  height: 100px;
-  background-color: white;
-  position: absolute;
-  left: 0;
-  top: 0;
-  animation: toRight 1s ease-in-out forwards;
-}
-
-@keyframes toRight {
-  0% {opacity: 0; transform: translateX(0)}
-  30% {opacity: 1}
-  70% {opacity: 1}
-  100% {opacity: 0; transform: translateX(300px)}
-}
-
-
-
-header ul {
-  color: var(--accent2);
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style-type: none;
-  justify-content: start;
-  gap: 20px;  
-}
-
-.nav-active {
-  color: white;
-}
-
-.nav-item {
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-item::after { 
-  content: '';
-  height: 100px;
-  width: 10px;
-  background-color: white;
-  position: absolute;
-  top:0;
-  left: 0;
-}
-
-#navLink1::after {
-  animation: toRight1 1s forwards;
-}
-
-@keyframes toRight1 {
-  0%{background-color: white}
-  100%{background-color: red}
-}
-
-.hamburger-menu {
-  position: relative;
-}
-
-.hamburger-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: black;
-  margin: 3px 0;
-  transition: 0.3s;
-}
-
-.menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  border: 1px solid #ccc;
-  width: 100%;
-  text-align: center;
-}
-
-.menu.open {
-  display: block;
-}
-
-.menu a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-}
-
-.menu a:hover {
-  background-color: #f0f0f0;
-}
-
-.dropdown-menu {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-button {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  border: 1px solid #ccc;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content.show {
-  display: block;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-
-
 /* Main */
 
 main {
@@ -189,12 +18,14 @@ main {
 .section-title {
   text-align: center;
   font-size: 3rem;
+  padding: 10px;
+  box-shadow: 1px 1px 10px;
   animation: animate 3s linear infinite;
 }
 
 @keyframes animate {
-  0% {color: blue}
-  100% {color: yellow}  
+  0% {box-shadow: 1px 1px 10px var(--primary)}
+  100% {box-shadow: 1px 1px 10px var(--secondary);}  
 }
 
 /* About Me Section */
@@ -211,8 +42,11 @@ main {
 }
 
 #about-me .portfolio-link-btn {
-  background-color: red;
+  background-color: var(--primary);
   margin-bottom: 10px;
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 25px;
   position: relative;
   overflow: hidden;
 }
@@ -240,7 +74,7 @@ main {
   }
   100% {
     opacity: .5;
-    transform: translateX(100px)
+    transform: translateX(200px)
   }
 }
 
@@ -285,29 +119,33 @@ main {
   width: 100%;
  }
 
- #about-me .top .top-1 {
+ #about-me .top-container {
   text-align: center;
  }
 
-#about-me .top-container img {  
-  width: 80%;
-}
-
-#about-me .top-container h2,p {
-  text-align: center;
-  animation-name: greg;
+#about-me .top-header {  
+  animation-name: fade-in;
   animation-duration: 4s;
 }
 
-@keyframes greg {
+@keyframes fade-in {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-  }
-  
+  }  
 }
+
+#about-me .top-header img {  
+  width: 80%;
+}
+
+#about-me .top-header #larger-title {
+  font-size: 2rem;
+}
+
+
 
 #about-me .bio p {
   text-align: left;

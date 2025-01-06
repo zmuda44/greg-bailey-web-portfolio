@@ -2,8 +2,9 @@
 import { Outlet } from 'react-router-dom';
 
 // Import 2 css files
-import './App.css'
-import './responsive.css'
+import './css/main.css'
+import './css/header.css'
+import './css/responsive.css'
 
 // Import header and footer components
 import Header from './components/header';

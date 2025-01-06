@@ -6,20 +6,19 @@ function AboutMe() {
         <h1 id="aboutme-title" className="section-title">Welcome to my web design portolio</h1>
         <button class="portfolio-link-btn">View Portfolio</button>
 
-          <div className='top'>
-            <div className = 'top-container'>
-              <div className="top-1">  
-              <h2>Full Stack Web Developer</h2>
-              <p>React MySQL MondoDB Express</p>
-              <img src="./images/monitor and cell cutout.webp"  />              
-              </div>
-              <div className="top-2">            
-                <h2>Reponsive Design Graphic Design Video Design</h2>
-                <p>Graphic Design portfolio available upon request</p>
-              </div> 
-            </div> 
-          </div>
-          <div className="bio">
+        <div className='top'>
+          <div className = 'top-container'>
+              <div className="top-header">  
+                <h2 id="larger-title">Full Stack Web Developer</h2>
+                <p>React MySQL MondoDB Express</p>
+                <h2>Web Design | Graphic Design | Video Design</h2>
+                <p>Graphic Design portfolio available upon request</p>                     
+              </div>       
+              <img src="./images/monitor and cell.png"  />  
+          </div> 
+        </div> 
+
+        <div className="bio">
             <h3>Greg Bailey - Web Developer</h3>
             <p>I am a full stack web developer with over 10 years experience in graphic and web design. Please feel free to 
             browse my portfolio for projects that I have completed. 
@@ -40,8 +39,8 @@ function AboutMe() {
             from scratch that looks and operates better, but I also have an understanding of how web servers operate and to perform full CRUD operations. 
             </p>
             <img src="./images/headshot.png" alt="image of me" />  
-          </div>  
-      </div>
+        </div> 
+      </div> 
     </section>
   );
 }
