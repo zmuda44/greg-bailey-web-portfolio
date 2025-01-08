@@ -4,6 +4,10 @@ import { useState, useEffect, useRef } from 'react';
 function Navigation() {
   const [activeLink, setActiveLink] = useState(); // Track the active link
   
+  const afterElement = document.getElementsByClassName(".nav-item::after")
+  for (element of afterElement) {
+    element.style.backgroundColor = "red"
+  }
   useEffect(() => {
     // Highlight the "About Me" link on initial load
     const aboutMeLink = document.getElementById('navLink1');
@@ -23,6 +27,10 @@ function Navigation() {
 
     // Add the 'nav-active' class to the clicked link
     event.target.classList.add('nav-active');
+
+    //Add new class to prevent animation
+    event.target.classList.add('no-animation');
+
 
     // Update the activeLink state to the clicked link
     setActiveLink(event.target);
@@ -55,7 +63,7 @@ function Navigation() {
           onClick={highlightLink}
           id="navLink2"
           to="/portfolio"
-          className={`nav-item ${activeLink?.id === 'navLink1' ? 'nav-active' : ''}`}
+          className={`nav-item ${activeLink?.id === 'navLink2' ? 'nav-active' : ''}`}
         >
           Portfolio
         </Link>,
@@ -64,7 +72,7 @@ function Navigation() {
           onClick={highlightLink}
           id="navLink3"
           to="/resume"
-          className={`nav-item ${activeLink?.id === 'navLink1' ? 'nav-active' : ''}`}
+          className={`nav-item ${activeLink?.id === 'navLink3' ? 'nav-active' : ''}`}
         >
           Resume
         </Link>,

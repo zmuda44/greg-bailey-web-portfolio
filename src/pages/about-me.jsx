@@ -10,7 +10,7 @@ function AboutMe() {
           <div className = 'top-container'>
               <div className="top-header">  
                 <h2 id="larger-title">Full Stack Web Developer</h2>
-                <p>React MySQL MondoDB Express</p>
+                <p id="scroll-skills">HTML CSS Javascript React MySQL MondoDB Express</p>
                 <h2>Web Design | Graphic Design | Video Design</h2>
                 <p>Graphic Design portfolio available upon request</p>                     
               </div>       
@@ -20,23 +20,22 @@ function AboutMe() {
 
         <div className="bio">
             <h3>Greg Bailey - Web Developer</h3>
-            <p>I am a full stack web developer with over 10 years experience in graphic and web design. Please feel free to 
-            browse my portfolio for projects that I have completed. 
+            <p>I am a full stack web developer with over 10 years experience in graphic and web design. 
+            Feel free to explore my portfolio to see a selection of projects I've successfully completed.
             </p>
-            <p>The path that has brought me to web development started in Marketing. 
-            In a Marketing role, the manager is often tasked with monitoring the website's content and developing new content to meet marketing goals. 
+            <p>The path that has brought me to web development started as a Marketing Manager, where I was responsible for managing and creating content for websites to align with marketing goals. 
             I have worked with online platforms in this capacity for several years; in Wordpress, Umbraco and other systems.
-            A marketing professional will eventually familiarize themselves with html structure and css. The website manager will often provide access to a portion of the CMS or a webpage to allow them to produce blog content, so my experience in websites began in this manner.
+            A marketing professional will familiarize themselves with html and css structure. The website administration will often provide access to a portion of the CMS or page to allow the production of blog content, and sections of the pages for content. 
             </p>
             <p>In these managerial roles, I was tasked with producing the content and design of materials, and this especially included images and graphics for the web. In addition to graphic design tasks,
-            I began creating websites from scratch using Wordpress and the popular page builders of the time, such as WPBakery and Elementor. I gained a greater understanding of the page layout from building these sites.
-            There is very little coding that needs to be done in these page builders, but concepts such as nesting, padding, margin, border and even flexbox are the same. I often applied custom css styling as overrides to achieve a custom look.
+            I have experience using Wordpress and popular page builders, such as WPBakery and Elementor. Page builders also offer a better understanding of page layout.
+            There is very little coding that needs to be done in these page builders, but concepts such as nesting, padding, margin, border and even flexbox are the same. Custom css styling as overrides can be done to achieve a custom look.
             </p>
             <p>As I became more interested in websites, I wanted to learn it all. I wanted to know the code behind it, 
             and mainly I wanted to start creating look and functionlaity that is either unavailable in page builders, 
             or come at the expense of load time and performance. I have recently completed the Rutgers Web development
             Bootcamp and I am 1000 times more confident in my ability than when I first began. I not only can build a website
-            from scratch that looks and operates better, but I also have an understanding of how web servers operate and to perform full CRUD operations. 
+            from scratch that looks and operates better, but I also have an understanding of how web servers operate to perform full CRUD operations. 
             </p>
             <img src="./images/headshot.png" alt="image of me" />  
         </div> 

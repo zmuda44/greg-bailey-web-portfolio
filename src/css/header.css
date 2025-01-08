@@ -33,7 +33,14 @@ header .brand::after {
   position: absolute;
   left: 0;
   top: 0;
-  animation: toRight 1s ease-in-out forwards;
+  animation: blockToRight 1s ease-in-out forwards;
+}
+
+@keyframes blockToRight {
+  0% {opacity: 0; transform: translateX(0)}
+  30% {opacity: 1}
+  70% {opacity: 1}
+  100% {opacity: 0; transform: translateX(300px)}
 }
 
 header .brand::before {
@@ -45,6 +52,11 @@ header .brand::before {
   left: 0px;
   top: 0px;
   animation: wipe-on-brand 1s ease-in-out forwards;  
+}
+
+@keyframes wipe-on-brand {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(300px);}  
 }
 
 header ul {
@@ -80,18 +92,6 @@ header ul {
   animation: wipe-on-nav 1s 1s forwards;
 } 
 
-@keyframes toRight {
-  0% {opacity: 0; transform: translateX(0)}
-  30% {opacity: 1}
-  70% {opacity: 1}
-  100% {opacity: 0; transform: translateX(300px)}
-}
-
-@keyframes wipe-on-brand {
-  0% {transform: translateX(0);}
-  100% {transform: translateX(300px);}  
-}
-
 @keyframes wipe-on-nav {
   0% {transform: translateX(0);}
   100% {transform: translateX(103px);}  
@@ -105,6 +105,11 @@ header ul {
 }
 #navLink3::after {
   animation-delay: 2s
+}
+
+ /*  */
+.nav-item:focus::after {
+  animation: none;
 }
 
 .hamburger-menu {
