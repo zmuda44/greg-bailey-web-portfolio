@@ -1,16 +1,24 @@
-
 function AboutMe() {
+
+
+
+
   return (
     <section id='about-me'>
       <div className="container">
         <h1 id="aboutme-title" className="section-title">Welcome to my web design portolio</h1>
-        <button class="portfolio-link-btn">View Portfolio</button>
+        <button className="portfolio-link-btn">View Portfolio</button>
 
-        <div className='top'>
+        <div className='top-content'>
           <div className = 'top-container'>
               <div className="top-header">  
                 <h2 id="larger-title">Full Stack Web Developer</h2>
-                <p id="scroll-skills">HTML CSS Javascript React MySQL MondoDB Express</p>
+                <div id="scroll-skills">  
+                  <span>HTML</span><span>CSS</span><span>Javascript</span>
+                  <span>React</span><span>MySQL</span><span>MondoDB</span>
+                  <span>Express</span><span>Photoshop</span><span>Illustrator</span>
+                  <span>XD</span>  
+                </div>
                 <h2>Web Design | Graphic Design | Video Design</h2>
                 <p>Graphic Design portfolio available upon request</p>                     
               </div>       
@@ -41,7 +49,9 @@ function AboutMe() {
         </div> 
       </div> 
     </section>
+    
   );
+
 }
 
 export default AboutMe;

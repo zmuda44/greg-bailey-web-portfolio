@@ -124,6 +124,9 @@ main {
  }
 
 #about-me .top-header {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   animation-name: fade-in;
   animation-duration: 4s;
 }
@@ -150,8 +153,29 @@ main {
 }
 
 #about-me .top-header #scroll-skills {
-  animation: word-scroll 3s infinite;
+  display: flex;
+  width: 70%;  
+  text-align: center;
+  overflow: hidden;
 }
+
+#about-me .top-header #scroll-skills span {
+  padding: 5px;
+  animation: scroll 15s linear infinite; /* 15 seconds for one full cycle */
+}
+
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(-500px);
+  }
+}
+
 
 
 
