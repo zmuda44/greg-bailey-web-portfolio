@@ -80,6 +80,11 @@ header ul {
   text-align: center;
 }
 
+.nav-item:hover {
+  transform: scale(110%);
+  transition-duration: .5s;
+}
+
 .nav-item::after { 
   content: '';
   height: 100px;
@@ -89,7 +94,7 @@ header ul {
   position: absolute;
   top:0;
   left: -3px;
-  animation: wipe-on-nav 1s 1s forwards;
+  animation: wipe-on-nav 1s forwards;
 } 
 
 @keyframes wipe-on-nav {
@@ -97,7 +102,7 @@ header ul {
   100% {transform: translateX(103px);}  
 }
 
-#navLink1::after {
+/* #navLink1::after {
   animation-delay: 1s
 }
 #navLink2::after {
@@ -105,12 +110,12 @@ header ul {
 }
 #navLink3::after {
   animation-delay: 2s
-}
+} */
 
  /*  */
-.nav-item:focus::after {
+/* .nav-item:focus::after {
   animation: none;
-}
+} */
 
 .hamburger-menu {
   position: relative;
