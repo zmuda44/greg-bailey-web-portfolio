@@ -18,7 +18,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Nomad Notes",
+    title: "Travel Blog",
     description: "Keep track of upcoming trips, past trips, notes, and more all in a social media format. Share trips with friends or keep them private. ",
     img: './images/nomad-notes-screenshot.png',
     url: 'https://travel-blog-odu2.onrender.com/',
