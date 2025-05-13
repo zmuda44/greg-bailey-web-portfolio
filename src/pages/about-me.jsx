@@ -7,7 +7,7 @@ function AboutMe() {
     <section id='about-me'>
       <div className="container">
         <h1 id="aboutme-title" className="section-title">Welcome to my web design portolio</h1>
-        <button className="portfolio-link-btn">View Portfolio</button>
+        <a href="/portfolio"><button className="portfolio-link-btn">View Portfolio</button></a>
 
         <div className='top-content'>
           <div className = 'top-container'>

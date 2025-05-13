@@ -10,19 +10,19 @@ const projects = [
   },
   {
     id: 2,
+    title: "Traders' Jons organic marketplace",
+    description: "Trader Jons - the ebay of organic foods",
+    img: './images/traders johns screenshot.png',
+    url: 'https://traders-johns.onrender.com/',
+    repo: 'https://github.com/zmuda44/Traders_johns_react'
+  },
+  {
+    id: 3,
     title: "Nomad Notes",
     description: "Keep track of upcoming trips, past trips, notes, and more all in a social media format. Share trips with friends or keep them private. ",
     img: './images/nomad-notes-screenshot.png',
     url: 'https://travel-blog-odu2.onrender.com/',
     repo: 'https://github.com/zmuda44/travel-blog'
-  },
-  {
-    id: 3,
-    title: "Traders' Jons organic marketplace",
-    description: "Trader Jons - the ebay of organic foods",
-    img: './images/traders-johns-screenshot.png',
-    url: 'https://traders-johns.onrender.com/',
-    repo: 'https://github.com/zmuda44/Traders-Johns'
   },
 
   {
