@@ -4,7 +4,7 @@ const projects = [
     id: 1,
     title: "R&J Custom Machine Shop",
     description: "Small business website. Includes custom estimates and the ability to view and manage estimates through an admin portal. ",
-    img: './images/rj machine screenshot.png',
+    img: './images/rj-machine screenshot.png',
     url: 'https://r-j-machine.onrender.com/',
     repo: 'https://github.com/zmuda44/R-J-Machine'
   },
@@ -20,7 +20,7 @@ const projects = [
     id: 3,
     title: "Travel Blog",
     description: "Keep track of upcoming trips, past trips, notes, and more all in a social media format. Share trips with friends or keep them private. ",
-    img: './images/nomad-notes-screenshot.png',
+    img: './images/travel-blog screenshot.png',
     url: 'https://travel-blog-odu2.onrender.com/',
     repo: 'https://github.com/zmuda44/travel-blog'
   },
