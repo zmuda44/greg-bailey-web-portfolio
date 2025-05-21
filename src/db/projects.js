@@ -21,6 +21,7 @@ const projects = [
     title: "Travel Blog",
     description: "Keep track of upcoming trips, past trips, notes, and more all in a social media format. Share trips with friends or keep them private. ",
     img: './images/travel-blog screenshot.png',
+    
     url: 'https://travel-blog-odu2.onrender.com/',
     repo: 'https://github.com/zmuda44/travel-blog'
   },

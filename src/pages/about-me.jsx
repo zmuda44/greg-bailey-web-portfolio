@@ -12,21 +12,25 @@ function AboutMe() {
         <div className='top-content'>
           <div className = 'top-container'>
               <div className="top-header">  
-                <h2 id="larger-title">Full Stack Web Developer</h2>
-                <div id="scroll-skills">  
-                  <span>HTML</span><span>CSS</span><span>Javascript</span>
-                  <span>React</span><span>MySQL</span><span>MondoDB</span>
-                  <span>Express</span><span>Photoshop</span><span>Illustrator</span>
-                  <span>XD</span>  
-                </div>
-                <h2>Web Design | Graphic Design | Video Design</h2>
-                <p>Graphic Design portfolio available upon request</p>                     
+                <img src="./images/monitor and cell.png"  /> 
+                <div className="right">
+                 <h2 id="larger-title">Full Stack Web Developer</h2>
+                  <div id="scroll-skills">  
+                    <span>HTML</span><span>CSS</span><span>Javascript</span>
+                    <span>React</span><span>MySQL</span><span>MondoDB</span>
+                    <span>Express</span><span>Photoshop</span><span>Illustrator</span>
+                    <span>XD</span>  
+                  </div>
+                  <h2>Web Design | Graphic Design | Video Design</h2>
+                  <p>Graphic Design portfolio available upon request</p>   
+                </div>                
               </div>       
-              <img src="./images/monitor and cell.png"  />  
+              
           </div> 
         </div> 
-
+     </div> 
         <div className="bio">
+          <div className="container">
             <h3>Greg Bailey - Web Developer</h3>
             <p>I am a full stack web developer with over 10 years experience in graphic and web design. 
             Feel free to explore my portfolio to see a selection of projects I've successfully completed.
@@ -45,9 +49,10 @@ function AboutMe() {
             Bootcamp and I am 1000 times more confident in my ability than when I first began. I not only can build a website
             from scratch that looks and operates better, but I also have an understanding of how web servers operate to perform full CRUD operations. 
             </p>
-            <img src="./images/headshot.png" alt="image of me" />  
+            <img src="./images/headshot.png" alt="image of me" /> 
+          </div>
         </div> 
-      </div> 
+ 
     </section>
     
   );
